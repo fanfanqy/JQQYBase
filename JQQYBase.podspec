@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JQQYBase'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'JQ QY Base'
 
 # This description is used to generate tags and improve search results.
