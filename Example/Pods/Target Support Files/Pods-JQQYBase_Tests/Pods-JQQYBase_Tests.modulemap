@@ -1,0 +1,6 @@
+framework module Pods_JQQYBase_Tests {
+  umbrella header "Pods-JQQYBase_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

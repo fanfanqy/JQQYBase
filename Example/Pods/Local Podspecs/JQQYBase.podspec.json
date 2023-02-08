@@ -1,0 +1,33 @@
+{
+  "name": "JQQYBase",
+  "version": "0.1.0",
+  "summary": "JQ QY Base",
+  "description": "Presenter、VC、CollectionViewCell、CellAdapter、ViewModel、CellItemView",
+  "homepage": "https://github.com/fanfanqy/JQQYBase",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fanfanqy": "17755357647@163.com"
+  },
+  "source": {
+    "git": "https://github.com/fanfanqy/JQQYBase.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "JQQYBase/Classes/**/*",
+  "dependencies": {
+    "TFFallLayout": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "Then": [
+
+    ]
+  }
+}

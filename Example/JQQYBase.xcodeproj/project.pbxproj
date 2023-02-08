@@ -41,9 +41,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		739066210EB870D3919FDA8C /* Pods_JQQYBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQQYBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8762876EF769C18D5CA937CC /* JQQYBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JQQYBase.podspec; path = ../JQQYBase.podspec; sourceTree = "<group>"; };
-		905CB77AB6D4421FC79B588E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9BAA40B0CB439F5E5B949FA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8762876EF769C18D5CA937CC /* JQQYBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JQQYBase.podspec; path = ../JQQYBase.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		905CB77AB6D4421FC79B588E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9BAA40B0CB439F5E5B949FA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DCF31B591BD3B9E4E4AFB300 /* Pods-JQQYBase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQQYBase_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JQQYBase_Tests/Pods-JQQYBase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E23DA717F0449F3DFB837407 /* Pods-JQQYBase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQQYBase_Tests.release.xcconfig"; path = "Target Support Files/Pods-JQQYBase_Tests/Pods-JQQYBase_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EF8B40CE5276521DEE6DD0E6 /* Pods-JQQYBase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JQQYBase_Example.debug.xcconfig"; path = "Target Support Files/Pods-JQQYBase_Example/Pods-JQQYBase_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				DCF31B591BD3B9E4E4AFB300 /* Pods-JQQYBase_Tests.debug.xcconfig */,
 				E23DA717F0449F3DFB837407 /* Pods-JQQYBase_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +314,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JQQYBase_Example/Pods-JQQYBase_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/JQQYBase/JQQYBase.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/TFFallLayout/TFFallLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JQQYBase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TFFallLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
