@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'JQQYBase_Example' do
+  pod 'JQQYBase', :path => '../'
+
+  target 'JQQYBase_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
