@@ -6,7 +6,7 @@
 //
 
 import Foundation
-@objc protocol JQQYBaseCellAdapter {
+@objc public protocol JQQYBaseCellAdapter {
     @objc optional func cellHeight()->CGFloat
     
     @objc optional func cellWidth()->CGFloat

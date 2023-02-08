@@ -1,5 +1,5 @@
 import XCTest
-import JQQYBase
+
 
 class Tests: XCTestCase {
     

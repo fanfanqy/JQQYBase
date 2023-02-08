@@ -13,6 +13,15 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		67CAA509299374060063A5CF /* SwiftProjectHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA508299374060063A5CF /* SwiftProjectHeader.swift */; };
+		67CAA513299374190063A5CF /* Demo1CellItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA50B299374190063A5CF /* Demo1CellItemView.swift */; };
+		67CAA514299374190063A5CF /* Demo1CollectionViewCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA50C299374190063A5CF /* Demo1CollectionViewCellAdapter.swift */; };
+		67CAA515299374190063A5CF /* Demo1Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA50D299374190063A5CF /* Demo1Logic.swift */; };
+		67CAA516299374190063A5CF /* Demo1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA50E299374190063A5CF /* Demo1ViewModel.swift */; };
+		67CAA517299374190063A5CF /* Demo1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA50F299374190063A5CF /* Demo1Presenter.swift */; };
+		67CAA518299374190063A5CF /* Demo1ModelCollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA510299374190063A5CF /* Demo1ModelCollectionViewCellExtension.swift */; };
+		67CAA519299374190063A5CF /* Demo1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA511299374190063A5CF /* Demo1Model.swift */; };
+		67CAA51A299374190063A5CF /* Demo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CAA512299374190063A5CF /* Demo1ViewController.swift */; };
 		ACEE5F261DABCA399F513C60 /* Pods_JQQYBase_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584701CD4571B7134541B24A /* Pods_JQQYBase_Tests.framework */; };
 		FADADF5D482765585ED1A7BA /* Pods_JQQYBase_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739066210EB870D3919FDA8C /* Pods_JQQYBase_Example.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +49,15 @@
 		607FACE51AFB9204008FA782 /* JQQYBase_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JQQYBase_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		67CAA508299374060063A5CF /* SwiftProjectHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProjectHeader.swift; sourceTree = "<group>"; };
+		67CAA50B299374190063A5CF /* Demo1CellItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1CellItemView.swift; sourceTree = "<group>"; };
+		67CAA50C299374190063A5CF /* Demo1CollectionViewCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1CollectionViewCellAdapter.swift; sourceTree = "<group>"; };
+		67CAA50D299374190063A5CF /* Demo1Logic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1Logic.swift; sourceTree = "<group>"; };
+		67CAA50E299374190063A5CF /* Demo1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1ViewModel.swift; sourceTree = "<group>"; };
+		67CAA50F299374190063A5CF /* Demo1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1Presenter.swift; sourceTree = "<group>"; };
+		67CAA510299374190063A5CF /* Demo1ModelCollectionViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1ModelCollectionViewCellExtension.swift; sourceTree = "<group>"; };
+		67CAA511299374190063A5CF /* Demo1Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1Model.swift; sourceTree = "<group>"; };
+		67CAA512299374190063A5CF /* Demo1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo1ViewController.swift; sourceTree = "<group>"; };
 		739066210EB870D3919FDA8C /* Pods_JQQYBase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JQQYBase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8762876EF769C18D5CA937CC /* JQQYBase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JQQYBase.podspec; path = ../JQQYBase.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		905CB77AB6D4421FC79B588E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -102,6 +120,8 @@
 		607FACD21AFB9204008FA782 /* Example for JQQYBase */ = {
 			isa = PBXGroup;
 			children = (
+				67CAA50A299374190063A5CF /* Demo1 */,
+				67CAA508299374060063A5CF /* SwiftProjectHeader.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -146,6 +166,21 @@
 				9BAA40B0CB439F5E5B949FA2 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		67CAA50A299374190063A5CF /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				67CAA50B299374190063A5CF /* Demo1CellItemView.swift */,
+				67CAA50C299374190063A5CF /* Demo1CollectionViewCellAdapter.swift */,
+				67CAA50D299374190063A5CF /* Demo1Logic.swift */,
+				67CAA50E299374190063A5CF /* Demo1ViewModel.swift */,
+				67CAA50F299374190063A5CF /* Demo1Presenter.swift */,
+				67CAA510299374190063A5CF /* Demo1ModelCollectionViewCellExtension.swift */,
+				67CAA511299374190063A5CF /* Demo1Model.swift */,
+				67CAA512299374190063A5CF /* Demo1ViewController.swift */,
+			);
+			path = Demo1;
 			sourceTree = "<group>";
 		};
 		CFE5B1D5C4D180429F5954CA /* Pods */ = {
@@ -337,8 +372,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CAA514299374190063A5CF /* Demo1CollectionViewCellAdapter.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				67CAA51A299374190063A5CF /* Demo1ViewController.swift in Sources */,
+				67CAA515299374190063A5CF /* Demo1Logic.swift in Sources */,
+				67CAA519299374190063A5CF /* Demo1Model.swift in Sources */,
+				67CAA516299374190063A5CF /* Demo1ViewModel.swift in Sources */,
+				67CAA518299374190063A5CF /* Demo1ModelCollectionViewCellExtension.swift in Sources */,
+				67CAA517299374190063A5CF /* Demo1Presenter.swift in Sources */,
+				67CAA513299374190063A5CF /* Demo1CellItemView.swift in Sources */,
+				67CAA509299374060063A5CF /* SwiftProjectHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,10 +529,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JQQYBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -500,10 +546,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JQQYBase/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

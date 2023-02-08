@@ -7,8 +7,8 @@
 
 import UIKit
 
-class JQQYBasePresenter: NSObject {
+open class JQQYBasePresenter: NSObject {
 
-    var viewController:UIViewController?
+    open var viewController:UIViewController?
     
 }

@@ -6,8 +6,9 @@
 //
 
 import UIKit
-import TFFallLayout
-final class JQQYBaseCollectionViewCell<V:JQQYCellItemView>: TFCollectionViewCell {
+
+
+public final class JQQYBaseCollectionViewCell<V:JQQYCellItemView>: TFCollectionViewCell {
     
     private let view:V
     
@@ -20,11 +21,11 @@ final class JQQYBaseCollectionViewCell<V:JQQYCellItemView>: TFCollectionViewCell
         }
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override class func collectionView(_ collectionView: UICollectionView?, sizeForItem object: TFCollectionReusableViewItemProtocol) -> CGSize {
+    public override class func collectionView(_ collectionView: UICollectionView?, sizeForItem object: TFCollectionReusableViewItemProtocol) -> CGSize {
         if let item:JQQYBaseCellAdapter = object.model as? JQQYBaseCellAdapter {
             return CGSizeMake(item.cellWidth!(), item.cellHeight!())
             
@@ -33,7 +34,7 @@ final class JQQYBaseCollectionViewCell<V:JQQYCellItemView>: TFCollectionViewCell
         
     }
     
-    override var object: TFCollectionReusableViewItemProtocol {
+    public override var object: TFCollectionReusableViewItemProtocol {
         didSet{
             super.object = object
             view.object = object

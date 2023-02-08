@@ -12,12 +12,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.addSubview(self.btn)
+        self.btn.snp.makeConstraints { make in
+            make.centerX.centerY.equalToSuperview()
+            make.size.equalTo(CGSizeMake(100, 40))
+            
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    lazy var btn: UIButton = {
+        let btn = UIButton(type: .system)
+        btn.setTitle("进入Demo", for: .normal)
+        btn.addTarget(self, action: #selector(btnClick), for:.touchUpInside)
+        return btn
+        
+    }()
+    
+    @objc func btnClick() {
+        let vc = Demo1ViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 
 }

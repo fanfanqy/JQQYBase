@@ -6,10 +6,12 @@
 //
 
 import UIKit
-import TFFallLayout
-class JQQYBaseViewController: UIViewController {
+
+import UIKit
+
+open class JQQYBaseViewController: UIViewController {
     
-    override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         initView()
@@ -17,7 +19,7 @@ class JQQYBaseViewController: UIViewController {
         
     }
     
-    func initView() {
+    open func initView() {
         self.collectionView.snp.makeConstraints { make in
             make.left.right.bottom.equalToSuperview()
             make.top.equalToSuperview().offset(UIApplication.shared.statusBarFrame.size.height+44)
@@ -25,13 +27,13 @@ class JQQYBaseViewController: UIViewController {
         }
     }
     
-    func initData() {
+    open func initData() {
         
     }
     
-    lazy var adaptor = TFFallLayoutAdaptor()
+    open lazy var adaptor = TFFallLayoutAdaptor()
     
-    lazy var collectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: TFFallLayout()).then { obj in
+    open lazy var collectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: TFFallLayout()).then { obj in
         obj.showsVerticalScrollIndicator = false
         obj.showsHorizontalScrollIndicator = false
         obj.delegate = self.adaptor

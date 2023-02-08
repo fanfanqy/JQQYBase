@@ -6,14 +6,15 @@
 //
 
 import UIKit
-import TFFallLayout
-class JQQYBaseViewModel: NSObject,TFCollectionViewAdaptorDelegate,TFCollectionViewCellDelegate {
+
+
+open class JQQYBaseViewModel: NSObject,TFCollectionViewAdaptorDelegate,TFCollectionViewCellDelegate {
     
-    var viewController:UIViewController?
+    open var viewController:UIViewController?
     
-    var dataArray:Array = Array<JQQYBaseCellAdapter>()
+    open var dataArray:Array = Array<JQQYBaseCellAdapter>()
     
-    func generateSectionItems() -> Array<TFFallLayoutSectionItem> {
+    open func generateSectionItems() -> Array<TFFallLayoutSectionItem> {
         var array = Array<TFFallLayoutSectionItem>()
         if let item = self.makeSection(with: self.dataArray) {
             array.append(item)
@@ -22,27 +23,27 @@ class JQQYBaseViewModel: NSObject,TFCollectionViewAdaptorDelegate,TFCollectionVi
         
     }
     
-    func makeSection(with array: Array<JQQYBaseCellAdapter>?) -> TFFallLayoutSectionItem? {
+    open func makeSection(with array: Array<JQQYBaseCellAdapter>?) -> TFFallLayoutSectionItem? {
         return nil
         
     }
     
-    func handleClickCell(at indexPath:IndexPath, with object:TFCollectionReusableViewItemProtocol) {
+    open func handleClickCell(at indexPath:IndexPath, with object:TFCollectionReusableViewItemProtocol) {
         
     }
     
-    func handleCellResponse(viewIdentifier identifier: String?, object: TFCollectionReusableViewItemProtocol?) {
+    open func handleCellResponse(viewIdentifier identifier: String?, object: TFCollectionReusableViewItemProtocol?) {
         
     }
     
     // MARK: - TFCollectionViewAdaptorDelegate
-    func collectionView(_ collectionView: UICollectionView, didSelectObject object: TFCollectionReusableViewItemProtocol, rowAt indexPath: IndexPath) {
+    open func collectionView(_ collectionView: UICollectionView, didSelectObject object: TFCollectionReusableViewItemProtocol, rowAt indexPath: IndexPath) {
         handleClickCell(at: indexPath, with: object)
         
     }
     
     // MARK: - TFCollectionViewCellDelegate
-    func collectionViewCell(_ cell: TFCollectionViewCell?, didTappedView view: UIView?, viewIdentifier identifier: String?, cellObject object: TFCollectionReusableViewItemProtocol) {
+    open func collectionViewCell(_ cell: TFCollectionViewCell?, didTappedView view: UIView?, viewIdentifier identifier: String?, cellObject object: TFCollectionReusableViewItemProtocol) {
         handleCellResponse(viewIdentifier: identifier, object: object)
         
     }
